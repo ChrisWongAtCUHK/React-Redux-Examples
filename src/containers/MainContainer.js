@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
 import Main from '../components/Main';
 
-import { showMessage } from '../actions';
+import { changeMessage } from '../actions';
 
 export default connect(
 		(state) => ({
 			message: state.getIn(['dummyReducers', 'message'])
 		}),
 		(dispatch) => ({
-			onShowMessage: () => () => {
-				dispatch(showMessage());							 
+			onChangeMessage: (event) => {
+				dispatch(changeMessage(event.target.value));							 
 			}
 		})
 )(Main);

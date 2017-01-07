@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Main = ({
-	onShowMessage, 
+	onChangeMessage, 
 	message
 }) => (
 	<div>
@@ -9,7 +9,7 @@ const Main = ({
 			<div className="row">
 				<div className="col-md-8">
 					<h3>{message}</h3>
-					<input type="button" value="Don't click me." onClick={onShowMessage()}/>
+					<input type="text" onChange={onChangeMessage}/>
 				</div>
 			</div>
 		</div>

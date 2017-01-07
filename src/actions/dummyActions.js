@@ -1,4 +1,4 @@
 import { createAction } from 'redux-actions';
-import { SHOW_MESSAGE } from '../constants/actionTypes';
+import { CHANGE_MESSAGE } from '../constants/actionTypes';
 
-export const showMessage = createAction(SHOW_MESSAGE);
+export const changeMessage = createAction(CHANGE_MESSAGE);

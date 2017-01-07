@@ -5,8 +5,8 @@ import { DummyState } from '../../constants/model';
  * Handle all actions
  * */
 const dummyReducers = handleActions({
-	CHANGE_MODE: (state, { payload }) => {
-		return state.get('config');
+	SHOW_MESSAGE: (state, { payload }) => {
+		return state.set('message', "Don't write Hello World for React.");
 	}
 }, DummyState);
 

@@ -1,1 +1,1 @@
-export const CHANGE_MODE = 'CHANGE_MODE';
+export const SHOW_MESSAGE = 'SHOW_MESSAGE';

@@ -9,7 +9,10 @@ const Main = ({
 			<div className="row">
 				<div className="col-md-8">
 					<h3>{message}</h3>
-					<input type="text" onChange={onChangeMessage}/>
+					<ul style={{ listStyleType: "none" }}>
+						<li><input type="checkbox" value="React JS" onChange={onChangeMessage}/>React JS</li>
+						<li><input type="checkbox" value="JSX" onChange={onChangeMessage}/>JSX</li>
+					</ul>
 				</div>
 			</div>
 		</div>
